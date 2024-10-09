@@ -39,7 +39,7 @@
       border-radius: 10px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
       margin-bottom: 30px;
-      height: 100%;
+      height: 80%;
     }
 
     .col-lg-4,
@@ -107,6 +107,73 @@
       background-color: #333;
       color: #fff;
     }
+    /* Updated Styles for the Welcome Section with White Background */
+#welcome {
+    background-color: #ffffff; /* Changed to white */
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#welcome .container {
+    position: relative;
+    z-index: 2;
+}
+
+#welcome h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#welcome .lead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    color: #555; /* Slightly lighter than the main heading for contrast */
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#welcome p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Optional: Add a subtle border at the bottom for section separation */
+#welcome::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    #welcome {
+        padding: 60px 0;
+    }
+
+    #welcome h1 {
+        font-size: 2.5rem;
+    }
+    
+    #welcome .lead {
+        font-size: 1.3rem;
+    }
+
+    #welcome p {
+        font-size: 1rem;
+    }
+}
   </style>
 
 </head>
@@ -142,12 +209,25 @@
 
   <main class="main">
 
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome section">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1>Hi, I'm Yassine HAMDANE</h1>
+            <p class="lead">Aspiring Cloud Engineer & DevOps Enthusiast</p>
+            <p>Welcome to my portfolio! I'm passionate about cloud technologies, system design, and the DevOps culture. Explore my journey and projects below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>Aspiring cloud engineer and DevOps enthusiast. My journey began in 2019, right after my baccalauréat, driven by a long-standing passion for coding. Starting with a strong foundation in software engineering, my interests have since evolved to encompass cloud technologies, system design, and the DevOps culture.</p> <br>
+        <p>My journey began in 2019, right after my baccalauréat, driven by a long-standing passion for coding. Starting with a strong foundation in software engineering, my interests have since evolved to encompass cloud technologies, system design, and the DevOps culture.</p> <br>
         <p>Through hands-on projects and internships, I've gained practical experience, complemented by a solid theoretical grounding in fundamental IT concepts from my academic formation.</p><br>
         <p>Currently pursuing a double degree at ENSIMAG (Grenoble INP), in a Master of Science in Informatics specializing in Distributed and Cloud Computing. Actively seeking an end-of-studies internship starting from February 2025 in the field of cloud engineering or DevOps to apply and expand my skills.</p>
       </div>
