@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Yassine HAMDANE</title>
+  <meta content="job" name="description">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon-32x32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .row.gy-4 {
+      margin-right: -20px;
+      margin-left: -20px;
+    }
+
+    .skill-item {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      height: 100%;
+    }
+
+    .col-lg-4,
+    .col-md-6 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .skill-item .icon {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 32px;
+      border-radius: 50%;
+      background-color: #f0f0ff;
+      color: #4154f1;
+      transition: 0.3s;
+      flex-shrink: 0;
+    }
+
+    .skill-item:hover .icon {
+      background-color: #4154f1;
+      color: #fff;
+    }
+
+    .skill-item .title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .skill-item .description {
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .skill-item {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+
+  <style>
+    .modal-content {
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-header .btn-close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .btn-outline-dark {
+      border-width: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-dark:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Yassine HAMDANE</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/Hamdane-yassine" target="_blank" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/hamdane-yassine/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-code-square navicon"></i> Projects</a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Aspiring cloud engineer and DevOps enthusiast. My journey began in 2019, right after my baccalauréat, driven by a long-standing passion for coding. Starting with a strong foundation in software engineering, my interests have since evolved to encompass cloud technologies, system design, and the DevOps culture.</p> <br>
+        <p>Through hands-on projects and internships, I've gained practical experience, complemented by a solid theoretical grounding in fundamental IT concepts from my academic formation.</p><br>
+        <p>Currently pursuing a double degree at ENSIMAG (Grenoble INP), in a Master of Science in Informatics specializing in Distributed and Cloud Computing. Actively seeking an end-of-studies internship starting from February 2025 in the field of cloud engineering or DevOps to apply and expand my skills.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="col-lg content">
+          <h2>Contact & Info </h2>
+          <br>
+          <div class="row">
+            <div class="col-lg">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Saint Martin D'hères,
+                    France</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+33 7 84 61 40 13</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hamdaneyassine10@gmail.com</span>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a
+                      href="https://linkedin.com/in/hamdane-yassine" target="_blank">hamdane-yassine</a></span></li>
+              </ul>
+            </div>
+            <div class="col-lg">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MSc in Informatics (In
+                    progress)</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Distributed and Cloud
+                    Computing</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Certification:</strong> <span>Certified Kubernetes Application Developer (CKAD)</span>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>Arabic, English (TOEIC - B2), French
+                    (B2)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Informatics</h4>
+              <h5>2024 - 2025</h5>
+              <p><em>ENSIMAG (Grenoble INP), Grenoble, France</em></p>
+              <p>Specialization: Distributed Computing</p>
+              <p><strong>Key Courses:</strong> Advanced Networking, Large-scale Data Management and Distributed Systems,
+                Cloud Computing, Process Engineering</p>
+            </div>
+            <div class="resume-item">
+              <h4>Engineering Degree in Information Systems</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>ENSIMAG (Grenoble INP), Grenoble, France</em></p>
+              <p><strong>Key Courses:</strong> Distributed Algorithms, Distributed Systems, Cloud Computing
+                Fundamentals, Information Security</p>
+            </div>
+            <div class="resume-item">
+              <h4>Engineering Degree in Software Engineering</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>National Institute of Posts and Telecommunications (INPT), Morocco</em></p>
+              <p><strong>Key Courses:</strong> Big Data and NoSQL, Mobile Development, System Administration,
+                Virtualization, Software Architecture, API Design, Containerization, DevOps, Modern Web Applications,
+                Serverless and Cloud-Native Applications, Web/Mobile Security</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Mathematics and Computer Science</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Faculty of Sciences (FSR), Rabat, Morocco</em></p>
+              <p><strong>Key Courses:</strong> Theory of Languages and Compilation, Operations Research, Databases,
+                Network Administration, Network Interconnection</p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate Degree in Software Engineering</h4>
+              <h5>2019 - 2021</h5>
+              <p><em>Higher School of Technology (ESTS), Salé, Morocco</em></p>
+              <p><strong>Key Courses:</strong> Computer Architecture, Algorithms, C Programming, Advanced Java, Data
+                Structures, Operating Systems, Computer Networks, Relational Databases, Web Development, Oracle Database
+                Administration</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Engineering Intern</h4>
+              <h5>February - July 2024</h5>
+              <p><em>Probayes, Montbonnot, France</em></p>
+              <ul>
+                <li>Supervised credit card fraud detection models.</li>
+                <li>Created dashboards and automated metrics updates.</li>
+                <li>Configured and monitored system metrics for InfluxDB</li>
+                <li>Documented deployment and backup processes </li>
+                <li> <strong>Technologies used:</strong> Grafana, InfluxDB, Docker, Bash, Scala, Apache Spark</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Engineering Intern</h4>
+              <h5>June - August 2023</h5>
+              <p><em>Clear Impulse, Rabat, Morocco</em></p>
+              <ul>
+                <li>Developed a web platform for invoice management.</li>
+                <li>Improved traceability and automated invoice management.</li>
+                <li> <strong>Technologies used:</strong> Spring Boot, MySQL, Docker</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Full Stack and Mobile Development Intern</h4>
+              <h5>May - July 2021</h5>
+              <p><em>Atmar, Rabat, Morocco</em></p>
+              <ul>
+                <li>Developed a dynamic website.</li>
+                <li>Created a mobile application for product management.</li>
+                <li> <strong>Technologies used:</strong> PHP Laravel, MySQL, Java (Android Development)</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Development Intern</h4>
+              <h5>June 2020</h5>
+              <p><em>Higher School of Technology, Salé, Morocco</em></p>
+              <ul>
+                <li>Developed a flexible conversational AI.</li>
+                <li>Facilitated access to information about the school.</li>
+                <li> <strong>Technologies used:</strong> Rasa, Python, TensorFlow</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p> Here are some of the interesting projects I've worked on across various domains, including software development, Cloud technologies, and DevOps practices. They represent my learning journey and practical experiences in these diverse areas of modern IT.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#youScoutModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/youscout-project-logo.jpg" class="img-fluid" alt="You Scout Logo">
+                  <div class="portfolio-info">
+                    <h4>You Scout</h4>
+                    <p>Innovative football talent discovery app</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- You Scout Modal -->
+            <div class="modal fade" id="youScoutModal" tabindex="-1" aria-labelledby="youScoutModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="youScoutModalLabel">You Scout</h3>
+                    <p class="lead mb-4">An innovative mobile app revolutionizing football talent discovery, connecting
+                      aspiring players with scouts and recruiters worldwide.</p>
+                    <a href="https://github.com/Hamdane-yassine/you-scout" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weather Forecast Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#weatherForecastModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/weather-forecast.jpg" class="img-fluid" alt="Weather Forecast Project">
+                  <div class="portfolio-info">
+                    <h4>Weather Forecast</h4>
+                    <p>Real-time weather forecasting and wind power estimation</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Weather Forecast Modal -->
+            <div class="modal fade" id="weatherForecastModal" tabindex="-1" aria-labelledby="weatherForecastModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="weatherForecastModalLabel">Weather Forecast</h3>
+                    <p class="lead mb-4">A distributed application for real-time weather forecasting and wind power
+                      estimation, providing current weather information and 5-day forecasts for any city worldwide.</p>
+                    <a href="https://github.com/Hamdane-yassine/weather-forecast-infra-repo" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Finnhub Data Streaming Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#finnhubModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/finnhub.jpg" class="img-fluid" alt="Finnhub Data Streaming Project">
+                  <div class="portfolio-info">
+                    <h4>Finnhub Data Streaming</h4>
+                    <p>Real-time Bitcoin trades analysis pipeline</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Finnhub Data Streaming Modal -->
+            <div class="modal fade" id="finnhubModal" tabindex="-1" aria-labelledby="finnhubModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="finnhubModalLabel">Finnhub Data Streaming</h3>
+                    <p class="lead mb-4">A real-time dashboard for visualizing Bitcoin trades, leveraging streaming data
+                      pipelines for reliability and low latency in analyzing trade metrics.</p>
+                    <a href="https://github.com/Hamdane-yassine/finnhub-data-streaming-pipline" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SGU University Management System Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#sguModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/sgu.jpg" class="img-fluid" alt="SGU University Management System">
+                  <div class="portfolio-info">
+                    <h4>SGU University Management</h4>
+                    <p>Comprehensive university administration system</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- SGU University Management System Modal -->
+            <div class="modal fade" id="sguModal" tabindex="-1" aria-labelledby="sguModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="sguModalLabel">SGU University Management</h3>
+                    <p class="lead mb-4">A comprehensive web-based platform for streamlining university administrative
+                      tasks, improving communication, and enhancing efficiency for all stakeholders.</p>
+                    <a href="https://github.com/Hamdane-yassine/SGU-University-management-system" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MERN Stack Deployment Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#mernModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/mern.jpg" class="img-fluid" alt="MERN Stack Deployment">
+                  <div class="portfolio-info">
+                    <h4>MERN Stack Deployment</h4>
+                    <p>Kubernetes deployment of MERN application</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- MERN Stack Deployment Modal -->
+            <div class="modal fade" id="mernModal" tabindex="-1" aria-labelledby="mernModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="mernModalLabel">MERN Stack Deployment</h3>
+                    <p class="lead mb-4">Demonstrates the deployment and monitoring of a MERN stack application in
+                      Kubernetes, showcasing containerization and industry-standard monitoring tools.</p>
+                    <a href="https://github.com/Hamdane-yassine/MERNStackDeployment" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bonita Cloud Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#bonitaModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/bonita.jpg" class="img-fluid" alt="Bonita Cloud Project">
+                  <div class="portfolio-info">
+                    <h4>Bonita Cloud Challenge</h4>
+                    <p>DevOps deployment of Bonita Community</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Bonita Cloud Modal -->
+            <div class="modal fade" id="bonitaModal" tabindex="-1" aria-labelledby="bonitaModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="bonitaModalLabel">Bonita Cloud Challenge</h3>
+                    <p class="lead mb-4">Solutions for deploying Bonita Community using its official Docker image in a
+                      Kubernetes cluster, with various configurations and database setups.</p>
+                    <a href="https://github.com/Hamdane-yassine/bonita-soft-challenge" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Maze Generation Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#mazeModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/maze.jpg" class="img-fluid" alt="Maze Generation Project">
+                  <div class="portfolio-info">
+                    <h4>Maze Generation</h4>
+                    <p>Algorithms for generating and solving mazes</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Maze Generation Modal -->
+            <div class="modal fade" id="mazeModal" tabindex="-1" aria-labelledby="mazeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="mazeModalLabel">Maze Generation</h3>
+                    <p class="lead mb-4">A comprehensive application for generating and solving mazes using various
+                      algorithms, developed as part of a bachelor's degree final project in Mathematical and Computer
+                      Science.</p>
+                    <a href="https://github.com/Hamdane-yassine/Maze-generation" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="skills" class="skills section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>As an aspiring cloud engineer and DevOps enthusiast, I've developed a diverse skill set through academic
+          projects, internships, and personal exploration. Here are some of the key areas I specialize in:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-cloud"></i></div>
+              <div>
+                <h4 class="title">Cloud Technologies</h4>
+                <p class="description">Experience with cloud platforms and services, including AWS, Azure, and GCP.
+                  Proficient in deploying and managing cloud-native applications.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+              <div>
+                <h4 class="title">Containerization & Orchestration</h4>
+                <p class="description">Skilled in Docker containerization and Kubernetes orchestration. CKAD certified,
+                  with hands-on experience in deploying and managing containerized applications.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-code-square"></i></div>
+              <div>
+                <h4 class="title">Programming & Scripting</h4>
+                <p class="description">Proficient in Java, Python, C, and Bash scripting. Experience in developing both
+                  backend services and automation scripts for DevOps workflows.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+              <div>
+                <h4 class="title">DevOps Practices</h4>
+                <p class="description">Familiar with CI/CD pipelines, version control (Git), and infrastructure as code
+                  (Terraform, Ansible). Experience with monitoring tools like Grafana and Prometheus.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+              <div>
+                <h4 class="title">Databases & Big Data</h4>
+                <p class="description">Knowledgeable in both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, Cassandra)
+                  databases. Experience with big data technologies like Hadoop and Spark.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
+              <div>
+                <h4 class="title">Monitoring and Logging</h4>
+                <p class="description">Extensive experience with monitoring and logging tools including Grafana,
+                  Prometheus, InfluxDB, and the ELK stack (Elasticsearch, Logstash, Kibana).</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Skill Item -->
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
