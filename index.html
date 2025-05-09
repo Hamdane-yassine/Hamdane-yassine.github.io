@@ -229,7 +229,7 @@
         <h2>About Me</h2>
         <p>My journey began in 2019, right after my baccalauréat, driven by a long-standing passion for coding. Starting with a strong foundation in software engineering, my interests have since evolved to encompass cloud technologies, system design, and the DevOps culture.</p> <br>
         <p>Through hands-on projects and internships, I've gained practical experience, complemented by a solid theoretical grounding in fundamental IT concepts from my academic formation.</p><br>
-        <p>Currently pursuing a double degree at ENSIMAG (Grenoble INP), in a Master of Science in Informatics specializing in Distributed and Cloud Computing. Actively seeking an end-of-studies internship starting from February 2025 in the field of cloud engineering or DevOps to apply and expand my skills.</p>
+        <p>Currently pursuing a double degree at ENSIMAG (Grenoble INP), in a Master of Science in Informatics specializing in Distributed and Cloud Computing.  I’m now looking to contribute my skills in a full-time role focused on clouds, DevOps, or site reliability engineering.</p>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         
@@ -239,10 +239,10 @@
           <div class="row">
             <div class="col-lg">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Saint Martin D'hères,
+                <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Paris,
                     France</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+33 7 84 61 40 13</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hamdaneyassine10@gmail.com</span>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hamdane.yassine00@@gmail.com</span>
                 </li>
                 <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a
                       href="https://linkedin.com/in/hamdane-yassine" target="_blank">hamdane-yassine</a></span></li>
@@ -321,13 +321,21 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
+              <h4>Software Engineering and DevOps Intern</h4>
+              <h5>Mar 2025 – Aug 2025</h5>
+              <p><em>SLB (Schlumberger), Paris, France</em></p>
+              <ul>
+                <li>Designed and built a .NET microservice to run third-party algorithms directly in SLB’s wellsite data-acquisition platform, streamlining a manual, multi-day integration into an automated, real-time process.</li>
+                <li>Containerized the service with Docker and implemented a full CI/CD pipeline using Azure Pipelines, deploying to a Rancher-managed Kubernetes cluster.</li>
+                <li><strong>Technologies used:</strong> .NET, Kubernetes, Azure Pipelines, RabbitMQ, gRPC, Redis</li>
+              </ul>
+            </div>            
+            <div class="resume-item">
               <h4>DevOps Engineer Intern</h4>
               <h5>February - July 2024</h5>
               <p><em>Probayes, Montbonnot, France</em></p>
               <ul>
-                <li>Supervised credit card fraud detection models.</li>
-                <li>Created dashboards and automated metrics updates.</li>
-                <li>Configured and monitored system metrics for InfluxDB</li>
+                <li>Created dashboards and automated metrics updates for fraud detection models.</li>
                 <li>Documented deployment and backup processes </li>
                 <li> <strong>Technologies used:</strong> Grafana, InfluxDB, Docker, Bash, Scala, Apache Spark</li>
               </ul>
@@ -350,16 +358,6 @@
                 <li>Developed a dynamic website.</li>
                 <li>Created a mobile application for product management.</li>
                 <li> <strong>Technologies used:</strong> PHP Laravel, MySQL, Java (Android Development)</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Development Intern</h4>
-              <h5>June 2020</h5>
-              <p><em>Higher School of Technology, Salé, Morocco</em></p>
-              <ul>
-                <li>Developed a flexible conversational AI.</li>
-                <li>Facilitated access to information about the school.</li>
-                <li> <strong>Technologies used:</strong> Rasa, Python, TensorFlow</li>
               </ul>
             </div>
           </div>
@@ -386,6 +384,68 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#customAutoscalerModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/custom-k8s-autoscaler.jpg" class="img-fluid" alt="Custom K8s Autoscaler Logo">
+                  <div class="portfolio-info">
+                    <h4>Custom Kubernetes Cluster Autoscaler</h4>
+                    <p>Self-managed K8s cluster with dynamic autoscaling via GitLab</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <!-- Custom Autoscaler Modal -->
+            <div class="modal fade" id="customAutoscalerModal" tabindex="-1" aria-labelledby="customAutoscalerModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="customAutoscalerModalLabel">Custom Kubernetes Cluster Autoscaler</h3>
+                    <p class="lead mb-4">Provisioned a self-managed HA Kubernetes cluster on GCP and built a custom autoscaler that triggers GitLab pipelines to scale nodes dynamically via gRPC.</p>
+                    <a href="https://github.com/Hamdane-yassine/gcp-iaas-k8s-cluster-autoscaler" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#cloudGkeModal" class="portfolio-link">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/cloud-native-gke-project.jpg" class="img-fluid" alt="Cloud-Native GKE Project Logo">
+                  <div class="portfolio-info">
+                    <h4>Cloud-Native Microservices on GKE (IaC)</h4>
+                    <p>End-to-end cloud infrastructure for scalable microservices</p>
+                  </div>
+                </div>
+              </a>
+            </div>            
+            
+            <!-- Cloud-Native GKE Modal -->
+            <div class="modal fade" id="cloudGkeModal" tabindex="-1" aria-labelledby="cloudGkeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-light">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center px-4 py-5">
+                    <h3 class="modal-title mb-3" id="cloudGkeModalLabel">Cloud-Native Microservices on GKE</h3>
+                    <p class="lead mb-4">Scalable and resilient microservice architecture on GKE, with infrastructure as code (Terraform), GitOps deployments (ArgoCD), service mesh (Istio), and full observability using Prometheus, Grafana, Tempo, and Loki.</p>
+                    <a href="https://github.com/Hamdane-yassine/gke-cloud-native-service-mesh-solution" target="_blank"
+                      class="btn btn-outline-dark btn-lg">
+                      <i class="bi bi-github me-2"></i>View on GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <a href="#" data-bs-toggle="modal" data-bs-target="#youScoutModal" class="portfolio-link">
